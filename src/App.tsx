@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
@@ -14,7 +14,7 @@ import { ToolsIUsed } from './components/ToolsIUsed';
 import { PROJECTS } from './data/projects';
 import { Project } from './types';
 import { Layers, Globe, Filter } from 'lucide-react';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 export default function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [filter, setFilter] = useState<'ALL' | 'Vercel' | 'Netlify'>('ALL');
