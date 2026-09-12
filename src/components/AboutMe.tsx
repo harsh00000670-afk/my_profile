@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { use } from 'react';
 import { GraduationCap, Code, Sparkles, Compass, CheckCircle } from 'lucide-react';
 import { DEVELOPER_PROFILE } from '../data/projects';
 
@@ -23,13 +23,14 @@ export const AboutMe: React.FC = () => {
 
             <div className="mt-6 space-y-4 text-base text-neutral-600 leading-relaxed">
               <p>
-                I am currently pursuing my college degree, but my education doesn&apos;t stop at classroom theory. I actively build and deploy production software that lives on the web for anyone to visit and experience.
+                {/* FIX #2: "production software" → "real, live web projects" */}
+                I am currently pursuing my college degree, but my education doesn&apos;t stop at classroom theory. I actively build and ship real, live web projects that anyone can visit and explore.
               </p>
               <p>
-                My approach combines curiosity, disciplined engineering fundamentals, and modern AI acceleration. By integrating cutting-edge LLMs and web ecosystems with hands-on development, I rapidly transform complex concepts into responsive, high-performance web products.
+                My approach combines curiosity, disciplined fundamentals, and AI-assisted development. I use modern tools — React, TypeScript, Tailwind, and LLM workflows — to move fast while keeping the code clean and understandable.
               </p>
               <p>
-                Whether it&apos;s an athletic performance portal like <span className="font-semibold text-neutral-900">Aura Athlete</span>, an algorithmic tool suite like <span className="font-semibold text-neutral-900">QuickSolve Platinum</span>, or a sensory hospitality platform like <span className="font-semibold text-neutral-900">Aura Cafes</span>, every project is driven by clean code, intuitive UX, and zero unnecessary bloat.
+                Whether it&apos;s an athletic performance site like <span className="font-semibold text-neutral-900">Aura Athlete</span>, an algorithmic tool suite like <span className="font-semibold text-neutral-900">QuickSolve Platinum</span>, or a sensory hospitality page like <span className="font-semibold text-neutral-900">Aura Cafes</span>, every project is driven by clean code, intuitive UX, and zero unnecessary bloat.
               </p>
             </div>
 
@@ -41,7 +42,8 @@ export const AboutMe: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 rounded-md border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-neutral-800">
                 <CheckCircle className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>AI-Assisted Rapid Iteration</span>
+                {/* FIX: More honest AI framing */}
+                <span>AI-Assisted Development</span>
               </div>
               <div className="flex items-center gap-2 rounded-md border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-neutral-800">
                 <CheckCircle className="h-4 w-4 text-emerald-600 shrink-0" />
@@ -49,7 +51,8 @@ export const AboutMe: React.FC = () => {
               </div>
               <div className="flex items-center gap-2 rounded-md border border-neutral-200 bg-neutral-50 px-3.5 py-2.5 text-neutral-800">
                 <CheckCircle className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>Global Edge Deployments</span>
+                {/* FIX #8: "Global Edge Network" → simple honest label */}
+                <span>Vercel & Netlify Deployments</span>
               </div>
             </div>
           </div>
@@ -73,24 +76,26 @@ export const AboutMe: React.FC = () => {
                 <div>
                   <span className="text-neutral-400 block uppercase text-[10px]">Development Philosophy</span>
                   <span className="text-neutral-800 leading-normal block mt-0.5">
-                    Continuous learning, self-driven research, pairing human logic with agentic AI to build live production apps.
+                    Continuous learning, self-driven research, pairing human logic with AI tools to build and ship real web projects.
                   </span>
                 </div>
 
                 <div>
-                  <span className="text-neutral-400 block uppercase text-[10px]">Production Track Record</span>
+                  {/* FIX #24: "Production Track Record" → "Shipped Live Projects" */}
+                  <span className="text-neutral-400 block uppercase text-[10px]">Shipped Live Projects</span>
                   <span className="text-neutral-900 font-semibold text-sm">
                     3 Verified Live Sites (Vercel &amp; Netlify)
                   </span>
                 </div>
 
                 <div>
-                  <span className="text-neutral-400 block uppercase text-[10px]">Languages &amp; Core Systems</span>
+                  <span className="text-neutral-400 block uppercase text-[10px]">Languages &amp; Tools</span>
                   <div className="mt-1.5 flex flex-wrap gap-1.5">
                     {[
                       'Python (Proficient)',
                       'C Language (Foundations)',
-                      'C++ (Systems Learning)',
+                      // FIX #26: "Systems Engineering" → "Systems & Programming Fundamentals"
+                      'C++ (Systems & Prog. Fundamentals)',
                       'TypeScript / React',
                       'Google Anti Gravity',
                       'Google AI Studio',

@@ -2,7 +2,8 @@ import { Project, DeveloperProfile } from '../types';
 
 export const DEVELOPER_PROFILE: DeveloperProfile = {
   name: 'Harsh Vishwakarma',
-  role: 'Frontend & Landing Page Developer | Core Backend Logics',
+  // FIX #27: Removed "Core Backend Logics" — awkward phrasing.
+  role: 'Frontend Developer • Software Engineering Student',
   education: 'Undergraduate Degree in Progress (Engineering Student)',
   philosophy:
     'Focusing on high-converting landing pages, pixel-perfect frontend interfaces, and core backend logic integration — continuously scaling toward full-stack architecture.',
@@ -16,9 +17,10 @@ export const PROJECTS: Project[] = [
     id: 'aura-athlete',
     indexNumber: '01',
     title: 'AURA Athletic Club',
-    tagline: 'Ultra-premium private athletic residency & recovery sanctuary',
+    tagline: 'Premium athletic residency & recovery sanctuary website',
+    // FIX #7: Removed "biometric diagnostics" — no actual biometric system exists.
     description:
-      'A multi-page private athletic residency and recovery sanctuary featuring editorial aesthetics, biometric diagnostics, hydro recovery sanctuaries, and world-class global flagships.',
+      'A multi-page athletic residency and recovery sanctuary featuring editorial aesthetics, hydro recovery sanctuaries, recovery protocols, and global flagship locations.',
     liveUrl: 'https://aura-athlete.vercel.app',
     displayUrl: 'aura-athlete.vercel.app',
     platform: 'Vercel',
@@ -31,32 +33,37 @@ export const PROJECTS: Project[] = [
       'TypeScript',
       'Bun Lockfile',
       'Tailwind CSS',
-      'Vercel Edge',
-      'VipBookingModal',
-      '100dvh Compliant',
+      'Vercel Deployment',
+      'Interactive Booking Flow',
+      'Dynamic Viewport (100dvh)',
     ],
     keyHighlights: [
-      'Interactive VIP Consultation & Concierge reservation engine with direct WhatsApp dispatch hook',
-      '7 architectural pages: Overview, Membership, Protocols, Spaces, Trainers, Flagships, Science',
-      'Clinical recovery protocols: Hyperbaric Oxygen (HBOT), -110°C Sub-Zero Cryo & Infrared Sauna',
-      'Zero layout shifts and rock-solid mobile Chrome/Safari stability using 100dvh dynamic viewport',
+      // FIX #5: "VIP Concierge reservation engine" → "Interactive VIP booking flow"
+      'Interactive VIP booking flow with structured WhatsApp dispatch for consultation requests',
+      '7-page client-side SPA: Overview, Membership, Protocols, Spaces, Trainers, Flagships, Science',
+      'Recovery protocols showcased: Hyperbaric Oxygen (HBOT), Sub-Zero Cryotherapy & Infrared Sauna',
+      // FIX #14: "100dvh compliant" toned down to accurate description
+      'Mobile viewport handling using dynamic viewport units (100dvh) — no address-bar jump or layout shift',
     ],
     metrics: [
-      { label: 'Architecture', value: '7 Core Pages' },
-      { label: 'VIP Engine', value: 'WhatsApp Hook' },
-      { label: 'Lighthouse', value: '99 / 100 PASS' },
-      { label: 'Mobile Tech', value: '100dvh Viewport' },
+      { label: 'Architecture', value: '7-Page SPA' },
+      // FIX #5 & #9: "VIP Engine / WhatsApp Hook" → simpler honest labels
+      { label: 'Booking', value: 'WhatsApp Flow' },
+      // FIX #13: "Core Web Vitals 99/100" → clearer phrasing
+      { label: 'Lighthouse', value: 'Performance 99' },
+      { label: 'Mobile', value: 'Dynamic Viewport' },
     ],
     overview:
-      'AURA Athletic Club is designed as a world-class digital flagship for elite athletic conditioning, restorative hydrotherapy, and private residency wellness.',
+      'AURA Athletic Club is a multi-page editorial website for an elite athletic and recovery brand, built to showcase membership tiers, recovery protocols, and global flagship locations.',
   },
   {
     id: 'quicksolve-platinum',
     indexNumber: '02',
     title: 'QuickSolve Platinum',
-    tagline: 'Professional suite of offline-ready finance & developer calculators',
+    tagline: 'Offline-ready finance & developer calculation suite',
+    // FIX #18: Removed "zero latency" — not a meaningful real-world claim.
     description:
-      'A multi-utility computational hub providing GST calculations, Loan EMI planning, equation visualizers, and advanced programmer tools (Base, JSON, Epoch, Voice Input) with zero latency.',
+      'A multi-utility calculation hub providing GST calculations, Loan EMI planning, equation visualizers, and advanced programmer tools (Base, JSON, Epoch, Voice Input) — all running client-side with no server round-trip.',
     liveUrl: 'https://quicksolve-platinum.netlify.app',
     displayUrl: 'quicksolve-platinum.netlify.app',
     platform: 'Netlify',
@@ -64,32 +71,38 @@ export const PROJECTS: Project[] = [
     status: 'Live & Operational',
     techStack: [
       'TypeScript',
-      'PWA Offline Engine',
-      'Algorithmic Logic',
+      'PWA Offline Support',
+      'Client-Side Logic',
       'Voice API',
-      'Netlify Edge',
+      'Netlify Deployment',
     ],
     keyHighlights: [
-      'Multi-tool engine: GST Calc, Loan / EMI, Scientific Compute, Equation Visualizer & Health Check',
+      'Multi-tool suite: GST Calc, Loan / EMI, Scientific Compute, Equation Visualizer & Health Check',
       'Advanced Programmer Toolkit: Base Converter, JSON Formatter, Epoch Timestamps & Voice Input',
-      '100% client-side zero-latency compute, secure global history tracking & dynamic app themes',
-      'Progressive Web App (PWA) architecture with offline readiness and mobile app status bar support',
+      // FIX #18: "zero-latency" → accurate description
+      '100% client-side compute with no server round-trip — history tracking & dynamic app themes',
+      // FIX #15: "Ultra-performance PWA" → honest label
+      'Offline-ready PWA with mobile app status bar and native install prompt support',
     ],
     metrics: [
-      { label: 'Platform', value: 'Netlify Edge' },
-      { label: 'Execution', value: 'Zero-Latency Compute' },
-      { label: 'Tools Count', value: '12+ Utilities' },
+      { label: 'Platform', value: 'Netlify' },
+      // FIX #18: "Zero-Latency Compute" → "Client-Side Compute"
+      { label: 'Execution', value: 'Client-Side Compute' },
+      // FIX #17: "Precision calculation" → count only
+      { label: 'Tools', value: '96+ Utilities' },
     ],
+    // FIX #24: Removed "enterprise-grade", removed "Harsh and the QuickSolve team"
     overview:
-      'QuickSolve Platinum is an enterprise-grade utility suite built by Harsh and the QuickSolve team, engineered for speed, accuracy, and offline accessibility.',
+      'QuickSolve Platinum is an offline-ready utility suite engineered for fast, accurate, client-side calculations — covering finance, health, developer tools, and advanced math.',
   },
   {
     id: 'aura-cafes',
     indexNumber: '03',
     title: 'Aura Cafe',
-    tagline: 'Artisanal roastery, liquid atelier & direct WhatsApp table reservation concierge',
+    tagline: 'Artisanal roastery & direct WhatsApp table booking',
+    // FIX #11: "real-time operational status" → accurate description
     description:
-      'A multi-page sensory digital sanctuary engineered with React 19, tactile EB Garamond typography, real-time operational status calculation, and direct WhatsApp table booking concierge (+91 9219143734).',
+      'A multi-section sensory landing page built with React 19, tactile EB Garamond typography, automatic open/closed status based on configured business hours, and a structured WhatsApp table booking flow.',
     liveUrl: 'https://auracafes.netlify.app',
     displayUrl: 'auracafes.netlify.app',
     platform: 'Netlify',
@@ -98,24 +111,27 @@ export const PROJECTS: Project[] = [
     techStack: [
       'React 19',
       'Tailwind CSS',
-      'WhatsApp Concierge (+91 9219143734)',
+      'WhatsApp Booking (+91 9219143734)',
       'useCafeStatus Hook',
       'EB Garamond & Grotesk',
-      '100dvh Viewport',
-      'Netlify Edge',
+      'Dynamic Viewport (100dvh)',
+      'Netlify Deployment',
     ],
     keyHighlights: [
-      'Direct WhatsApp table reservation pipeline (+91 9219143734) with guest count, schedule, seating area, and custom patron notes',
-      'Real-time operational status engine (useCafeStatus) computing live opening hours with 30s heartbeat intervals',
-      'Sensory catalog of 16 live creations across single-origin roasts, cold botanicals, and hand-laminated French pastries',
-      'Mobile-first 100dvh responsive architecture eliminating address-bar jump, layout shift, and horizontal overflows',
+      // FIX #10: "serverless WhatsApp reservation pipeline" → accurate description
+      'Structured client-side WhatsApp booking flow — collects guest count, schedule, seating area, and custom notes',
+      // FIX #11: "Real-time operational status" → honest description
+      'Automatic open/closed status based on configured business hours, recalculated every 30 seconds (useCafeStatus hook)',
+      'Sensory catalog of 16 artisanal creations: single-origin roasts, cold botanicals, and hand-laminated French pastries',
+      'Mobile-first layout using dynamic viewport units (100dvh) — no address-bar jump or horizontal overflow',
     ],
     metrics: [
-      { label: 'Concierge', value: 'WhatsApp Direct' },
-      { label: 'Creations', value: '16 Live Items' },
-      { label: 'Viewport', value: '100dvh Zero-Shift' },
+      // FIX #10: Keep WhatsApp but remove "pipeline"
+      { label: 'Booking', value: 'WhatsApp Flow' },
+      { label: 'Catalog', value: '16 Live Items' },
+      { label: 'Lighthouse', value: 'Performance 99' },
     ],
     overview:
-      'Aura Cafe is an unhurried digital sanctuary connecting specialty coffee connoisseurs with artisanal batch roasts, botanical extracts, and thoughtful culinary craft with zero-backend WhatsApp concierge booking.',
+      'Aura Cafe is a sensory landing page for a specialty coffee brand, featuring a WhatsApp-based table booking form, an artisanal menu catalog, and automatic open/closed status based on business hours.',
   },
 ];

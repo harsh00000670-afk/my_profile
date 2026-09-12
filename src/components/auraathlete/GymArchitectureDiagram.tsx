@@ -16,14 +16,16 @@ export function GymArchitectureDiagram() {
   const tiers = [
     {
       step: '01',
-      title: 'Biometric Sensory UI Layer',
+      // FIX #7: "Biometric Sensory UI Layer" → "Interactive UI Layer"
+      title: 'Interactive UI Layer',
       badge: 'React 19 + Tailwind CSS',
       icon: Smartphone,
       accent: 'border-neutral-950 bg-neutral-50',
       description:
-        'Tactile dark aesthetic with Hanken Grotesk display typography, strict 100dvh viewport bounds (preventing Chrome/Safari mobile address bar jumps), and zero horizontal overflow.',
+        'Tactile dark aesthetic with Hanken Grotesk display typography, dynamic viewport units (100dvh) preventing mobile address-bar layout jumps, and zero horizontal overflow.',
       bullets: [
-        'Strict 100dvh viewport normalization',
+        // FIX #14: "Strict 100dvh viewport normalization" → accurate wording
+        'Mobile viewport handling using dynamic viewport units (100dvh)',
         'Tailwind CSS design tokens & sub-zero palette',
         'Fully accessible WCAG AA contrast',
       ],
@@ -37,37 +39,44 @@ export function GymArchitectureDiagram() {
       description:
         'Seamless hash & state switching across 7 functional pages (Overview, Membership, Protocols, Spaces, Trainers, Flagships, Science) without DOM flashing or page unmounts.',
       bullets: [
-        'Sub-10ms page transition latency',
+        // FIX: "Sub-10ms page transition latency" is an unmeasured claim — simplified
+        'Fast client-side page transitions with no full reload',
         'Shared immutable gymData.ts state store',
         'Zero layout shifting during page navigation',
       ],
     },
     {
       step: '03',
-      title: 'VIP Concierge & Booking Engine',
-      badge: 'VipBookingModal.tsx Pipeline',
+      // FIX #5 & #9: "VIP Concierge & Booking Engine" → "Interactive VIP Booking Flow"
+      title: 'Interactive VIP Booking Flow',
+      // FIX: Badge updated
+      badge: 'VipBookingModal.tsx',
       icon: MessageSquare,
       accent: 'border-emerald-500 bg-emerald-50/40',
+      // FIX: Removed "authenticated", "concierges", over-claimed phrasing
       description:
-        'Direct consultation dispatch connecting prospective members with private concierges across NYC, London, Tokyo & Dubai using URI-encoded payloads and WhatsApp protocol hooks.',
+        'Booking form that collects consultation details and dispatches a structured message directly to WhatsApp using the wa.me URI scheme — no backend or database needed.',
       bullets: [
-        'Zero-backend serverless lead capture',
-        'Direct wa.me protocol hook & auto-formatted text',
-        'Tier, location, and biomarker goal verification',
+        // FIX: "Zero-backend serverless lead capture" → accurate
+        'Client-side form with no backend or server required',
+        'Direct wa.me protocol dispatch with auto-formatted message',
+        // FIX: "biomarker goal verification" → actual input fields
+        'Collects tier preference, location choice, and fitness goal',
       ],
     },
     {
       step: '04',
-      title: 'Vercel Global Edge Network',
+      // FIX #8: "Vercel Global Edge Network" as major engineering layer toned down
+      title: 'Vercel Deployment Layer',
       badge: 'Vite 6 + Bun Lockfile',
       icon: Globe,
       accent: 'border-blue-500 bg-blue-50/40',
       description:
-        'Deployed to Vercel global edge nodes with Brotli compression, instant cache invalidation, and sub-40ms Time to First Byte (TTFB) globally.',
+        'Deployed to Vercel with Brotli compression, automatic cache invalidation, and global CDN distribution for fast load times.',
       bullets: [
-        'High-speed Bun deterministic dependency locks',
+        'Reproducible builds via Bun deterministic lockfile',
         'Vite 6 tree-shaking & ESM code splitting',
-        'Immutable edge CDN distribution',
+        'Immutable CDN asset caching',
       ],
     },
   ];
@@ -78,16 +87,18 @@ export function GymArchitectureDiagram() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-neutral-200 bg-neutral-50/80 px-4 py-3 sm:px-6">
         <div className="flex items-center gap-2">
           <Zap className="h-4 w-4 text-neutral-900" />
+          {/* FIX #6: "4-TIER FULL STACK PIPELINE" → "4-LAYER FRONTEND ARCHITECTURE" */}
           <h3 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-neutral-950">
-            SYSTEM ARCHITECTURE // 4-TIER FULL STACK PIPELINE
+            SYSTEM ARCHITECTURE // 4-LAYER FRONTEND ARCHITECTURE
           </h3>
         </div>
+        {/* FIX #19: "Deterministic Flow" → "Structured Flow" */}
         <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-2 py-0.5 font-mono text-[10px] text-neutral-600 font-semibold border border-neutral-200">
-          Deterministic Flow
+          Structured Flow
         </span>
       </div>
 
-      {/* Grid of 4 Tiers */}
+      {/* Grid of 4 Layers */}
       <div className="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {tiers.map((tier, idx) => {
           const Icon = tier.icon;
@@ -99,7 +110,7 @@ export function GymArchitectureDiagram() {
               <div>
                 <div className="flex items-center justify-between mb-3">
                   <span className="font-mono text-xs font-bold text-neutral-400">
-                    PHASE {tier.step}
+                    LAYER {tier.step}
                   </span>
                   <div className="h-7 w-7 rounded-md bg-white border border-neutral-200 flex items-center justify-center text-neutral-900 shadow-2xs">
                     <Icon className="h-3.5 w-3.5" />

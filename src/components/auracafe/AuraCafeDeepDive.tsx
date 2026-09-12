@@ -56,11 +56,13 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
             <div className="h-4 w-px bg-neutral-200 hidden sm:block" />
 
             <div className="hidden sm:flex items-center gap-2">
+              {/* Name will be updated by user directly */}
               <span className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-950">
-                HARSH // AURA CAFE ATELIER
+                AURA CAFE ATELIER — CASE STUDY
               </span>
               <span className="rounded bg-amber-100 px-2 py-0.5 font-mono text-[10px] text-amber-900 font-semibold border border-amber-300">
-                ARCHITECTURE &amp; WHATSAPP ENGINE
+                {/* FIX: Accurate label */}
+                ARCHITECTURE &amp; WHATSAPP BOOKING FLOW
               </span>
             </div>
           </div>
@@ -88,7 +90,8 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
               onClick={() => scrollTo(architectureRef)}
               className="rounded-md border border-neutral-200 bg-white px-2.5 py-1 text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900 shrink-0 transition-colors"
             >
-              4-Tier Architecture
+              {/* FIX #6: "4-Tier Architecture" → "4-Layer Architecture" */}
+              4-Layer Architecture
             </button>
             <button
               onClick={() => scrollTo(fileTreeRef)}
@@ -100,7 +103,8 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
               onClick={() => scrollTo(bookingRef)}
               className="rounded-md border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-emerald-800 font-semibold hover:bg-emerald-100 shrink-0 transition-colors"
             >
-              WhatsApp Reservation Engine
+              {/* FIX #10: "WhatsApp Reservation Engine" → "WhatsApp Booking Flow" */}
+              WhatsApp Booking Flow
             </button>
             <button
               onClick={() => scrollTo(menuRef)}
@@ -124,7 +128,8 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
         <section className="space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 font-mono text-xs text-neutral-700">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span>CASE STUDY // PRODUCTION SPECIFICATION &amp; WHATSAPP ARCHITECTURE</span>
+            {/* FIX: Removed "PRODUCTION SPECIFICATION" — accurate label */}
+            <span>CASE STUDY // TECHNICAL BREAKDOWN &amp; WHATSAPP BOOKING FLOW</span>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
@@ -133,7 +138,12 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
                 Aura Cafe — Artisanal Roastery
               </h1>
               <p className="mt-3 text-base sm:text-lg text-neutral-600 leading-relaxed font-light">
-                An unhurried digital sanctuary engineered with React 19, tactile EB Garamond typography, and a direct serverless WhatsApp concierge booking pipeline. Features real-time operating status calculation, 16 single-origin extractions &amp; French pastries, and sub-second edge distribution on Netlify.
+                {/*
+                  FIX #10: "serverless WhatsApp concierge booking pipeline" → "client-side WhatsApp booking flow"
+                  FIX #11: "real-time operating status" → "automatic open/closed status based on configured hours"
+                  FIX #16: "sub-second edge distribution" → "deployed on Netlify CDN"
+                */}
+                A sensory landing page for an artisanal coffee brand, built with React 19 and tactile EB Garamond typography. Features a client-side WhatsApp booking flow, automatic open/closed status based on configured business hours, 16 artisanal menu items, and deployed on Netlify CDN.
               </p>
             </div>
 
@@ -159,12 +169,13 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
           </div>
         </section>
 
-        {/* Section 1: 4-Tier Architecture Diagram */}
+        {/* Section 1: 4-Layer Architecture Diagram */}
         <section ref={architectureRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <Layers className="h-4 w-4 text-neutral-900" />
+            {/* FIX #6: "4-TIER TECHNICAL ARCHITECTURE" → "4-LAYER FRONTEND ARCHITECTURE" */}
             <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-950">
-              01 // 4-TIER TECHNICAL ARCHITECTURE
+              01 // 4-LAYER FRONTEND ARCHITECTURE
             </h2>
           </div>
           <CafeArchitectureDiagram />
@@ -181,12 +192,13 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
           <CafeFileTreeViewer />
         </section>
 
-        {/* Section 3: Interactive WhatsApp Booking Engine */}
+        {/* Section 3: Interactive WhatsApp Booking Flow */}
         <section ref={bookingRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <MessageSquare className="h-4 w-4 text-emerald-600" />
+            {/* FIX #10: "DIRECT WHATSAPP TABLE RESERVATION PIPELINE" → "STRUCTURED WHATSAPP BOOKING FLOW" */}
             <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-950">
-              03 // DIRECT WHATSAPP TABLE RESERVATION PIPELINE (LIVE SIMULATOR)
+              03 // STRUCTURED WHATSAPP BOOKING FLOW (LIVE SIMULATOR)
             </h2>
           </div>
           <WhatsAppBookingEngine />
@@ -207,8 +219,9 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
         <section ref={auditRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 text-emerald-600" />
+            {/* FIX #11: "REAL-TIME STATUS HOOK" → "AUTO STATUS HOOK" */}
             <h2 className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-950">
-              05 // LIGHTHOUSE SCORES, REAL-TIME STATUS HOOK &amp; EDGE AUDIT
+              05 // LIGHTHOUSE SCORES, AUTO STATUS HOOK &amp; DEPLOYMENT AUDIT
             </h2>
           </div>
           <CafeAuditSection />
@@ -220,8 +233,9 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
             <h3 className="font-mono text-sm font-bold text-neutral-950">
               Ready to explore other projects?
             </h3>
+            {/* FIX: Removed personal name from this line */}
             <p className="text-xs text-neutral-600 mt-1 font-sans">
-              Return to Harsh&apos;s primary software engineering portfolio to review QuickSolve Platinum and AURA Athletic Club.
+              Return to the main portfolio to review QuickSolve Platinum and AURA Athletic Club.
             </p>
           </div>
           <button
@@ -237,8 +251,9 @@ export function AuraCafeDeepDive({ onBack }: AuraCafeDeepDiveProps) {
       {/* Footer */}
       <footer className="border-t border-neutral-200 bg-white py-8 text-center text-xs font-mono text-neutral-500">
         <div className="mx-auto max-w-7xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span>Harsh // AI-Augmented Software Engineer</span>
-          <span>Aura Cafe Production Architecture Case Study</span>
+          {/* Name placeholder — user will update this */}
+          <span>HV Dev // AI-Assisted Frontend Developer</span>
+          <span>Aura Cafe — Technical Case Study</span>
           <button onClick={onBack} className="hover:text-neutral-950 underline transition-colors">
             Return to Top ↑
           </button>

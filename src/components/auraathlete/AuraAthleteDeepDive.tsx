@@ -79,13 +79,14 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
         <section className="space-y-6">
           <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
             <span className="rounded bg-neutral-900 px-2.5 py-1 text-white font-semibold">
-              PROJECT 02 // ARCHITECTURE REVIEW
+              PROJECT 01 // ARCHITECTURE REVIEW
             </span>
             <span className="rounded bg-amber-100 border border-amber-300 px-2.5 py-1 text-amber-900 font-semibold">
-              HIGH-PERFORMANCE SANCTUARY
+              ATHLETIC & RECOVERY SANCTUARY
             </span>
             <span className="rounded bg-emerald-100 border border-emerald-300 px-2.5 py-1 text-emerald-900 font-semibold">
-              100dvh VIEWPORT OPTIMIZED
+              {/* FIX #14: Toned down from marketing claim to accurate description */}
+              MOBILE VIEWPORT OPTIMIZED
             </span>
           </div>
 
@@ -93,8 +94,12 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
             <h1 className="text-3xl sm:text-5xl font-black text-neutral-950 tracking-tight">
               AURA ATHLETIC CLUB
             </h1>
+            {/*
+              FIX: Removed "Olympic biomechanics with precision longevity telemetry" — overclaiming
+              FIX #5: "interactive VIP consultation booking" → "interactive VIP booking flow"
+            */}
             <p className="text-base sm:text-lg text-neutral-600 max-w-3xl leading-relaxed font-sans">
-              Ultra-private high-performance athletic club and cellular recovery sanctuary uniting Olympic biomechanics with precision longevity telemetry. Engineered as a 7-page client-side SPA with interactive VIP consultation booking and zero mobile viewport jumping.
+              A multi-page athletic club and recovery sanctuary website showcasing membership tiers, recovery protocols, global flagship locations, and an interactive VIP booking flow. Built as a 7-page client-side SPA with zero mobile viewport jumping.
             </p>
           </div>
 
@@ -107,35 +112,38 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
               <span className="text-sm sm:text-base font-bold text-neutral-950 mt-0.5 block">
                 React 19 + Vite 6
               </span>
-              <span className="text-[10px] text-neutral-500 mt-1 block">SPA Multi-Page</span>
+              <span className="text-[10px] text-neutral-500 mt-1 block">7-Page SPA</span>
             </div>
 
             <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-2xs">
+              {/* FIX #5 & #9: "VIP Concierge Pipeline" → "VIP Booking Flow" */}
               <span className="text-[10px] text-neutral-400 uppercase block font-semibold">
-                VIP Concierge Pipeline
+                VIP Booking Flow
               </span>
               <span className="text-sm sm:text-base font-bold text-amber-700 mt-0.5 block">
-                Direct WhatsApp Hook
+                WhatsApp Dispatch
               </span>
               <span className="text-[10px] text-neutral-500 mt-1 block">VipBookingModal.tsx</span>
             </div>
 
             <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-2xs">
               <span className="text-[10px] text-neutral-400 uppercase block font-semibold">
+                {/* FIX #12: "Global Flagships" is site content, fine to keep as-is */}
                 Global Flagships
               </span>
               <span className="text-sm sm:text-base font-bold text-neutral-950 mt-0.5 block">
-                4 Sanctums
+                4 Locations
               </span>
               <span className="text-[10px] text-neutral-500 mt-1 block">NYC · LDN · TYO · DXB</span>
             </div>
 
             <div className="rounded-xl border border-neutral-200 bg-white p-4 shadow-2xs">
+              {/* FIX #13: "Core Web Vitals 99/100" → cleaner label */}
               <span className="text-[10px] text-neutral-400 uppercase block font-semibold">
-                Core Web Vitals
+                Lighthouse Score
               </span>
               <span className="text-sm sm:text-base font-bold text-emerald-600 mt-0.5 block">
-                99 / 100 PASS
+                Performance 99
               </span>
               <span className="text-[10px] text-neutral-500 mt-1 block">0.000 CLS · 0ms TBT</span>
             </div>
@@ -156,6 +164,7 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
               onClick={() => scrollToSection(bookingRef)}
               className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-neutral-700 hover:bg-neutral-100 hover:text-neutral-950 transition-colors shadow-2xs"
             >
+              {/* FIX #23: "VIP Booking Simulation" is honest */}
               VIP BOOKING SIMULATOR
             </button>
             <button
@@ -168,7 +177,8 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
               onClick={() => scrollToSection(archRef)}
               className="rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-neutral-700 hover:bg-neutral-100 hover:text-neutral-950 transition-colors shadow-2xs"
             >
-              4-TIER PIPELINE
+              {/* FIX #6: "4-TIER PIPELINE" → "4-LAYER ARCHITECTURE" */}
+              4-LAYER ARCHITECTURE
             </button>
             <button
               onClick={() => scrollToSection(auditRef)}
@@ -193,7 +203,8 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
         <section ref={bookingRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs font-bold text-neutral-400 uppercase">
-              MODULE 02 // VIP CONCIERGE &amp; RESERVATION ENGINE
+              {/* FIX #5 & #9: "VIP CONCIERGE & RESERVATION ENGINE" → "VIP BOOKING FLOW SIMULATOR" */}
+              MODULE 02 // VIP BOOKING FLOW SIMULATOR
             </span>
           </div>
           <VipBookingSimulator />
@@ -209,11 +220,12 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
           <GymPagesShowcase />
         </section>
 
-        {/* SECTION 4: 4-Tier Pipeline */}
+        {/* SECTION 4: 4-Layer Architecture */}
         <section ref={archRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs font-bold text-neutral-400 uppercase">
-              MODULE 04 // 4-TIER FULL STACK PIPELINE
+              {/* FIX #6: "4-TIER FULL STACK PIPELINE" → "4-LAYER FRONTEND ARCHITECTURE" */}
+              MODULE 04 // 4-LAYER FRONTEND ARCHITECTURE
             </span>
           </div>
           <GymArchitectureDiagram />
@@ -223,7 +235,7 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
         <section ref={auditRef} className="space-y-4">
           <div className="flex items-center gap-2">
             <span className="font-mono text-xs font-bold text-neutral-400 uppercase">
-              MODULE 05 // PERFORMANCE &amp; 100dvh AUDIT
+              MODULE 05 // PERFORMANCE &amp; MOBILE VIEWPORT AUDIT
             </span>
           </div>
           <GymAuditSection />
@@ -236,11 +248,11 @@ export function AuraAthleteDeepDive({ onBack }: AuraAthleteDeepDiveProps) {
             className="inline-flex items-center gap-2 rounded-xl bg-neutral-950 px-6 py-3 font-mono text-xs font-bold text-white hover:bg-neutral-800 transition-colors shadow-xs"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>RETURN TO MASTER PORTFOLIO</span>
+            <span>RETURN TO PORTFOLIO</span>
           </button>
 
           <span className="font-mono text-xs text-neutral-400">
-            AURA Athletic Club · Architecture Case Study · 100dvh Production Ready
+            AURA Athletic Club · Architecture Case Study · Mobile Viewport Compliant
           </span>
         </div>
       </main>

@@ -23,7 +23,7 @@ const TIERS = [
     color: 'border-amber-500/40 bg-amber-500/5',
     tagColor: 'bg-amber-100 text-amber-900 border-amber-300',
     description:
-      'Dark luxury aesthetic using EB Garamond display serif, Hanken Grotesk sans, and bespoke liquid-glass shaders. Fully responsive from 360px mobile viewports to 4K displays with 100dvh compliance.',
+      'Dark luxury aesthetic using EB Garamond display serif, Hanken Grotesk sans, and bespoke liquid-glass blur effects. Fully responsive from 360px mobile viewports to 4K displays using dynamic viewport units (100dvh).',
     technologies: ['React 19', 'Tailwind CSS', 'EB Garamond', 'Liquid Glass Blur', 'Dynamic Viewport (100dvh)'],
     highlights: [
       'Tactile dark theme (#0e0c0b canvas with #F1E194 warm gold accents)',
@@ -34,55 +34,61 @@ const TIERS = [
   {
     id: 'tier-2',
     number: '02',
-    name: 'REAL-TIME CAFE STATUS ENGINE',
+    // FIX #11: "REAL-TIME CAFE STATUS ENGINE" → "AUTOMATIC CAFE STATUS ENGINE"
+    name: 'AUTOMATIC CAFE STATUS ENGINE',
     badge: 'useCafeStatus Hook',
     color: 'border-blue-500/40 bg-blue-500/5',
     tagColor: 'bg-blue-100 text-blue-900 border-blue-300',
+    // FIX #11: "real-time operational status" → "automatic open/closed status based on configured business hours"
     description:
-      'Client-side heartbeat calculation engine monitoring real-time operational status (Mon-Fri 7AM-8PM, Sat-Sun 8AM-9PM) with 30-second interval updates and pulsing indicators.',
-    technologies: ['React useEffect', 'Date Temporal Math', '30s Heartbeat Timer', 'Dynamic Badge States'],
+      'Client-side hook that computes automatic open/closed status based on configured business hours (Mon-Fri 7AM-8PM, Sat-Sun 8AM-9PM), recalculated every 30 seconds.',
+    technologies: ['React useEffect', 'Date Temporal Math', '30s Interval Timer', 'Dynamic Badge States'],
     highlights: [
       'Instant visual feedback ("Open Now • Closes at 8:00 PM" / "Closed Now • Opens at 7:00 AM")',
-      'Zero external API dependencies; pure deterministic temporal logic',
-      'Pulsing status pill displayed across sticky navigation, hero section, and visit guide',
+      'Zero external API dependencies — pure local time calculation against configured schedule',
+      'Status pill shown across sticky navigation, hero section, and visit guide',
     ],
   },
   {
     id: 'tier-3',
     number: '03',
-    name: 'SERVERLESS WHATSAPP PIPELINE',
-    badge: 'Direct WhatsApp Concierge',
+    // FIX #10: "SERVERLESS WHATSAPP PIPELINE" → "CLIENT-SIDE WHATSAPP BOOKING FLOW"
+    name: 'CLIENT-SIDE WHATSAPP BOOKING FLOW',
+    // FIX #10: Badge updated
+    badge: 'Client-Side WhatsApp Flow',
     color: 'border-emerald-500/40 bg-emerald-500/5',
     tagColor: 'bg-emerald-100 text-emerald-900 border-emerald-300',
+    // FIX #10: "Zero-backend reservation pipeline dispatching authenticated structured booking intents" → accurate
     description:
-      `Zero-backend reservation and pre-ordering pipeline dispatching authenticated structured booking intents directly to ${WHATSAPP_DISPLAY_PHONE} via URI scheme encoding.`,
+      `Client-side booking form that collects patron details, constructs a structured message, and dispatches it directly to ${WHATSAPP_DISPLAY_PHONE} via the wa.me URI scheme. No database or backend server required.`,
     technologies: ['WhatsApp URI Scheme (wa.me)', 'URI Component Encoding', 'Input Sanitization', 'Mobile App Handshake'],
     highlights: [
       'Collects patron name, phone number, party size, time slot, seating zone, and personal notes',
-      'Eliminates database maintenance, monthly server costs, and cold starts',
-      'Direct human-to-human hospitality connection with instantaneous mobile push notifications',
+      'No database or server costs — booking arrives directly as a WhatsApp message',
+      'Direct human-to-human hospitality connection with mobile push notification on receipt',
     ],
   },
   {
     id: 'tier-4',
     number: '04',
-    name: 'EDGE CDN & DEPLOYMENT LAYER',
-    badge: 'Netlify Edge Network',
+    name: 'NETLIFY DEPLOYMENT LAYER',
+    // FIX #8: "Global Edge Network" as major engineering claim toned down
+    badge: 'Netlify CDN',
     color: 'border-violet-500/40 bg-violet-500/5',
     tagColor: 'bg-violet-100 text-violet-900 border-violet-300',
     description:
-      'Globally distributed static distribution on Netlify Edge CDN with automatic SPA redirection (_redirects), Brotli compression, and immutable cache headers.',
-    technologies: ['Netlify Edge CDN', 'Brotli Compression', 'HTTP/2 Multiplexing', 'Sub-20ms TTFB'],
+      'Deployed on Netlify with automatic SPA routing (_redirects), Brotli compression, and global CDN distribution via immutable cache headers.',
+    technologies: ['Netlify CDN', 'Brotli Compression', 'HTTP/2', 'SPA Redirect Rules'],
     highlights: [
       'Pre-rendered static bundle with zero server render bottlenecks',
       'Strict security headers (X-Frame-Options, X-Content-Type-Options)',
-      'Sub-second first contentful paint across global cellular and fiber connections',
+      'Fast first contentful paint across global cellular and fiber connections',
     ],
   },
 ];
 
 const SECTIONS_FLOW = [
-  { id: 'nav', title: 'Navigation Bar', desc: 'Sticky glass with pulsing live status pill & table booking CTA' },
+  { id: 'nav', title: 'Navigation Bar', desc: 'Sticky glass with pulsing auto status pill & table booking CTA' },
   { id: 'hero', title: 'Hero Experience', desc: 'Editorial headline, sensory imagery & reservation trigger' },
   { id: 'menu', title: 'Sensory Menu', desc: '5 categories, item drawer & direct WhatsApp pre-orders' },
   { id: 'story', title: 'Heritage Story', desc: 'Timeline from 2019 Coorg estate to 2026 Brew Avenue' },
@@ -102,12 +108,13 @@ export function CafeArchitectureDiagram() {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-neutral-200 bg-neutral-50/80 px-4 py-3 sm:px-6">
         <div className="flex items-center gap-2">
           <Layers className="h-4 w-4 text-neutral-900" />
+          {/* FIX #6: "4-TIER TECHNICAL ARCHITECTURE" → "4-LAYER FRONTEND ARCHITECTURE" */}
           <h3 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-neutral-950">
-            AURA CAFE // 4-TIER TECHNICAL ARCHITECTURE
+            AURA CAFE // 4-LAYER FRONTEND ARCHITECTURE
           </h3>
         </div>
         <span className="font-mono text-[11px] text-neutral-500">
-          Click any tier to inspect architectural specifications
+          Click any layer to inspect specifications
         </span>
       </div>
 
@@ -142,12 +149,12 @@ export function CafeArchitectureDiagram() {
         </div>
       </div>
 
-      {/* 4 Tiers Navigation & Detail Split */}
+      {/* 4 Layers Navigation & Detail Split */}
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        {/* Tier Buttons List */}
+        {/* Layer Buttons List */}
         <div className="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-neutral-200 p-3 sm:p-4 bg-neutral-50/30 space-y-2">
           <div className="text-[11px] font-mono uppercase font-semibold text-neutral-400 px-2 mb-2">
-            System Tiers
+            Architecture Layers
           </div>
           {TIERS.map((tier) => {
             const isSelected = tier.id === activeTier;
@@ -163,7 +170,7 @@ export function CafeArchitectureDiagram() {
               >
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-[10px] font-extrabold text-neutral-400">
-                    TIER {tier.number}
+                    LAYER {tier.number}
                   </span>
                   <span
                     className={`rounded px-1.5 py-0.2 font-mono text-[9px] font-bold border ${tier.tagColor}`}
@@ -183,12 +190,12 @@ export function CafeArchitectureDiagram() {
           })}
         </div>
 
-        {/* Selected Tier Inspector */}
+        {/* Selected Layer Inspector */}
         <div className="lg:col-span-7 p-4 sm:p-6 bg-white space-y-5">
           <div className="border-b border-neutral-100 pb-4">
             <div className="flex items-center gap-2">
               <span className="font-mono text-xs font-bold text-neutral-400">
-                TIER {selectedTier.number} SPECIFICATION
+                LAYER {selectedTier.number} SPECIFICATION
               </span>
               <span className={`rounded px-2 py-0.5 font-mono text-[10px] font-bold border ${selectedTier.tagColor}`}>
                 {selectedTier.badge}
@@ -202,7 +209,7 @@ export function CafeArchitectureDiagram() {
             </p>
           </div>
 
-          {/* Key Architectural Highlights */}
+          {/* Key Highlights */}
           <div className="space-y-2">
             <div className="font-mono text-xs font-bold uppercase tracking-wider text-neutral-950">
               Implementation Highlights
