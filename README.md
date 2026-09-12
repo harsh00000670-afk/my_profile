@@ -1,442 +1,554 @@
-<div align="center">
+# ⬛ HV DEV — Portfolio
 
-# ⬛ HV DEV — PORTFOLIO
+### College Undergraduate · Frontend & Web Application Developer · AI-Assisted Workflow
 
-### *Live Production Portfolio · 3 Verified Deployments · AI-Augmented Workflow*
+[Live Portfolio](https://harshdev-omega.vercel.app/)
 
-[![Live Site](https://img.shields.io/badge/PORTFOLIO-LIVE-black?style=for-the-badge&logo=vercel&logoColor=white)](https://quicksolve-platinum.netlify.app)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind v4](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![PWA](https://img.shields.io/badge/PWA-Installable-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
-[![Vite 6](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8?logo=pwa&logoColor=white)
 
-<br/>
+A developer portfolio showcasing three live web projects, interactive case studies, device previews, and an AI-assisted development workflow.
 
-> **A high-performance developer portfolio showcasing 3 live production deployments with interactive deep-dive case studies, device simulators, and an AI-augmented development workflow.**
-
-<br/>
-
-</div>
+The portfolio is built as a React 19 single-page application with TypeScript, Tailwind CSS, Motion, and PWA support.
 
 ---
 
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
-- [Live Projects Showcased](#-live-projects-showcased)
+- [Live Projects](#-live-projects)
 - [Tech Stack](#-tech-stack)
 - [Key Features](#-key-features)
 - [Project Structure](#-project-structure)
-- [Deep Dive Architecture](#-deep-dive-architecture)
+- [Navigation Architecture](#-navigation-architecture)
 - [Getting Started](#-getting-started)
-- [Scripts Reference](#-scripts-reference)
+- [Scripts](#-scripts)
 - [Deployment](#-deployment)
-- [Tools & AI Workflow](#-tools--ai-workflow)
+- [AI-Assisted Workflow](#-ai-assisted-workflow)
+- [What I Focus On](#-what-i-focus-on)
 - [Contact](#-contact)
+- [License](#-license)
 
 ---
 
 ## 🧭 Overview
 
-This is the **personal engineering portfolio** of an undergraduate developer focused on building real, live production software — not just demos. The portfolio is engineered as a production-grade React 19 SPA with Tailwind CSS v4, serving three distinct purposes:
+This is the personal portfolio of a college undergraduate developer focused on building and shipping real web projects while developing deeper software engineering fundamentals.
 
-1. **Showcase** — 3 verified live deployments on Vercel & Netlify global edge CDNs
-2. **Inspect** — Interactive deep-dive case studies per project with file trees, architecture diagrams, and Lighthouse audit scores
-3. **Simulate** — Built-in device simulator to preview each live site at mobile, tablet, or desktop breakpoints
+The portfolio has three main purposes:
 
-The site itself is a **Progressive Web App (PWA)**, fully installable on both Android and iOS, and engineered with `100dvh` dynamic viewport compliance, `overflow-x` safe layout, and zero iOS input-zoom bugs.
+### Showcase
+Present three live projects built and deployed using Vercel and Netlify.
 
----
+### Inspect
+Provide technical case studies with project structure, architecture explanations, implementation details, and performance information.
 
-## 🚀 Live Projects Showcased
+### Explore
+Allow visitors to preview the showcased projects through an integrated device simulator.
 
-### `01` — AURA Athletic Club
-> **Ultra-premium private athletic residency & cellular recovery sanctuary**
+The portfolio itself is a React 19 SPA with:
 
-| Detail | Value |
-|---|---|
-| 🌐 Live URL | [aura-athlete.vercel.app](https://aura-athlete.vercel.app) |
-| ☁️ Platform | Vercel Edge CDN |
-| 📄 Architecture | 7-Page Multi-Tab SPA |
-| 📱 VIP Engine | Direct WhatsApp Concierge Booking |
-| 📊 Lighthouse | 99 / 100 |
-| 🔧 Viewport | 100dvh Zero-Shift Compliant |
-
-**Highlights:**
-- 7 architectural pages: Overview, Membership, Protocols, Spaces, Trainers, Flagships, Science
-- VIP concierge reservation engine dispatching directly to WhatsApp
-- Clinical recovery protocols: Hyperbaric Oxygen (HBOT), Sub-Zero Cryotherapy (-110°C), Infrared Sauna
-- Zero CLS and zero TBT — rock-solid mobile Chrome & Safari stability
+- TypeScript
+- Tailwind CSS v4
+- Motion
+- PWA support
+- Responsive layouts
+- Hash-based navigation
+- Interactive project case studies
+- Live project previews
 
 ---
 
-### `02` — QuickSolve Platinum
-> **Professional offline-ready finance & developer calculator suite**
+# 🚀 Live Projects
 
-| Detail | Value |
-|---|---|
-| 🌐 Live URL | [quicksolve-platinum.netlify.app](https://quicksolve-platinum.netlify.app) |
-| ☁️ Platform | Netlify Edge CDN |
-| 📄 Architecture | Multi-Utility PWA Hub |
-| 🔢 Tools | 96+ Calculation Utilities |
-| 📊 Lighthouse | 100 / 100 SEO |
-| 📦 Bundle | 100% Client-Side, Zero-Latency |
+## 01 — AURA Athletic Club
 
-**Highlights:**
-- 11 specialized suites: Finance, Math, Engineering, Health, Programmer, Biometrics & more
-- GST Calculator, Loan EMI Planner, Equation Visualizer, Scientific Compute Engine
-- Advanced programmer toolkit: Base Converter, JSON Formatter, Epoch Timestamps, Voice Input
-- Offline-ready PWA with mobile app status bar and native install prompt support
+**Ultra-premium private athletic club & recovery-focused landing experience**
 
----
+**Live:**  
+https://aura-athlete.vercel.app/
 
-### `03` — Aura Cafe
-> **Artisanal roastery, liquid atelier & direct WhatsApp table reservation concierge**
+### Highlights
 
-| Detail | Value |
-|---|---|
-| 🌐 Live URL | [auracafes.netlify.app](https://auracafes.netlify.app) |
-| ☁️ Platform | Netlify Edge CDN |
-| 📄 Architecture | Multi-Section Sensory Landing Page |
-| 📖 Catalog | 16 Live Artisanal Creations |
-| 📊 Lighthouse | 99 / 100 Performance |
-| 💬 Concierge | WhatsApp Direct (+91 9219143734) |
+- 7 major content sections/pages
+- Interactive membership and consultation experience
+- Trainer and location showcases
+- Interactive VIP booking flow
+- Responsive mobile-first layouts
+- Motion-based UI transitions
+- Dynamic viewport handling with `100dvh`
+- Lighthouse performance score around 99 during testing
 
-**Highlights:**
-- Real-time operating status engine (`useCafeStatus` hook) with 30-second heartbeat intervals
-- Serverless WhatsApp reservation pipeline — no database, no cold starts, zero backend cost
-- 16-item sensory catalog: single-origin roasts, cold botanical extracts, hand-laminated French pastries
-- Liquid-glass UI with EB Garamond editorial typography, Motion.js animations, and `100dvh` mobile compliance
+### Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
+- Vercel
+
+> The booking experience is implemented as an interactive frontend flow rather than a persistent backend reservation system.
 
 ---
 
-## 🛠 Tech Stack
+## 02 — QuickSolve Platinum
 
+**Offline-ready collection of client-side calculation tools**
+
+**Live:**  
+https://quicksolve-platinum.netlify.app/
+
+### Highlights
+
+- 96+ calculation utilities
+- 11 specialized tool suites
+- Finance and loan calculations
+- GST tools
+- Mathematical utilities
+- Programmer utilities
+- Health and biometrics tools
+- Scientific calculations
+- Equation and expression utilities
+- PWA support
+- Client-side computation
+- Offline-oriented architecture
+
+### Stack
+
+- HTML
+- CSS
+- JavaScript
+- PWA APIs
+- Client-side calculation engines
+- Netlify
+
+The project also includes shared calculation logic and reusable interfaces across multiple utility categories.
+
+---
+
+## 03 — Aura Cafe
+
+**Modern cafe landing page with a structured WhatsApp booking flow**
+
+**Live:**  
+https://auracafes.netlify.app/
+
+### Highlights
+
+- Responsive cafe landing page
+- Interactive menu/catalog
+- Business-hours status indicator
+- `useCafeStatus` custom React hook
+- Booking form with guest/date/time/seating details
+- Structured WhatsApp message generation
+- Motion-based interactions
+- Mobile-first layout
+- Lighthouse performance testing
+
+### Stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
+- Lucide React
+- Netlify
+
+> The booking system is a client-side flow that formats booking information and opens WhatsApp with the generated message. It does not use a database or persistent reservation backend.
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS v4
+- HTML
+- CSS
+- JavaScript
+
+## UI & Interaction
+
+- Motion
+- Lucide React
+- React-based component architecture
+- Responsive design
+- Custom UI components
+
+## Progressive Web App
+
+- `vite-plugin-pwa`
+- Service worker
+- Offline caching
+- Web App Manifest
+- Install detection
+- Android installation support
+- iOS installation guidance
+
+## Development & Tooling
+
+- Bun
+- npm
+- Git
+- GitHub
+- Termux
+- Acode
+
+## Deployment
+
+- Vercel
+- Netlify
+
+## AI-Assisted Development
+
+- ChatGPT
+- Google Gemini
+- Google AI Studio
+- Google Anti Gravity
+- Anthropic Claude
+- Google Flow
+
+---
+
+# ✨ Key Features
+
+## 🖥 Live Project Simulator
+
+The portfolio includes an integrated simulator for the showcased projects.
+
+Features include:
+
+- Desktop preview
+- Tablet preview
+- Mobile preview
+- Embedded live-site iframe
+- Reload controls
+- URL display
+- Open-in-new-tab option
+
+---
+
+## 🔬 Interactive Case Studies
+
+Each project has its own technical deep-dive containing relevant information about:
+
+- Project structure
+- Components
+- Architecture
+- Features
+- Implementation decisions
+- Performance results
+- Project-specific interactive demonstrations
+
+---
+
+## 📱 PWA Support
+
+The portfolio can be installed as a Progressive Web App.
+
+### Android
+
+Uses the browser's installation prompt when available.
+
+### iOS
+
+Provides instructions for adding the application through Safari's Share menu.
+
+The application also detects standalone display mode to adjust the installation UI accordingly.
+
+---
+
+## 🧭 Hash-Based Navigation
+
+The portfolio uses lightweight hash-based navigation for its project deep-dives.
+
+Example:
+
+```text
+/#quicksolve-review
+/#auracafe-review
+/#athlete-review
 ```
-FRONTEND CORE
-├── React 19              — Latest concurrent features & RSC-ready architecture
-├── TypeScript 5.8        — Strict mode, full type safety across all components
-├── Vite 6                — Lightning HMR, optimized production bundles
-└── Tailwind CSS v4       — New @theme config, dvh utilities, no config file needed
 
-ANIMATION & INTERACTION
-├── Motion v12            — Declarative spring physics, 60fps layout animations
-└── Lucide React          — Consistent, tree-shakeable SVG icon system
-
-PROGRESSIVE WEB APP
-├── vite-plugin-pwa       — Workbox service worker, offline caching, install prompt
-└── usePWAInstall hook    — Custom iOS/Android install detection & deferred prompt
-
-AI INTEGRATION
-└── @google/genai         — Google Gemini API client for AI-powered features
-
-BACKEND (Light)
-├── Express 4             — Minimal local development server
-└── dotenv                — Environment variable management for API keys
-
-DEPLOYMENT
-├── Vercel Edge           — Aura Athletic Club (zero-config, instant preview URLs)
-└── Netlify Edge          — QuickSolve + Aura Cafe (Brotli, HTTP/2, _redirects SPA)
-
-TOOLING
-├── Bun                   — Fast lockfile & script runner
-├── tsx                   — TypeScript server-side execution
-├── esbuild               — Ultra-fast JS bundler for server compilation
-└── sharp                 — Image optimization for PWA icon generation
-```
+The application listens for browser navigation events and switches between the main portfolio and project deep-dive views.
 
 ---
 
-## ✨ Key Features
+# 📂 Project Structure
 
-### 🖥 Interactive Live Site Simulator
-Click **"Simulator"** on any project card to open a full browser-chrome modal with:
-- **Desktop / Tablet / Mobile** viewport switcher
-- Real iframe embed of the live production site
-- Reload button, URL bar with SSL indicator
-- Open in new tab shortcut
-
-### 🔬 Deep Dive Case Studies
-Each of the 3 projects has a dedicated full-page technical deep-dive including:
-- **File Tree Explorer** — Interactive repository structure (`.git` excluded)
-- **Architecture Diagram** — Clickable multi-tier system overview
-- **Lighthouse Audit Panel** — Desktop & mobile scores with Core Web Vitals
-- **Project-Specific Simulator** — WhatsApp booking engine (Cafe), VIP booking form (Athlete), Calculator catalog (QuickSolve)
-- **Section Jump Navigation** — Sticky header with quick-scroll pills
-
-### 🧰 Tools I Used
-Filterable grid of every tool in the development stack including:
-- AI engines: Gemini, AI Studio, Claude, ChatGPT, Google Anti Gravity
-- UI libraries: React Bits, motion.io, Google Stitch
-- Cloud & deployment: Vercel, Netlify, Umami Analytics
-- Languages: Python, C, C++, TypeScript
-
-### 📲 PWA — Installable on Any Device
-- **Android**: Native "Add to Home Screen" prompt via `beforeinstallprompt`
-- **iOS Safari**: Share → Add to Home Screen with manual instruction sheet
-- **Standalone mode detection**: Hides install button when already installed
-
-### 🧭 Single-Page Navigation
-- Hash-based routing (`#quicksolve-review`, `#auracafe-review`, `#athlete-review`)
-- Deep dive pages replace the portfolio view entirely (no nested scroll issues)
-- Browser back/forward button support via `popstate`
-
----
-
-## 📂 Project Structure
-
-```
+```text
 PORTFOLIO_ROOT/
+│
 ├── public/
-│   ├── logo.svg                    # HV monogram logo
-│   ├── manifest.json               # PWA manifest (icons, theme, display)
-│   └── icons/                      # PWA icon set (generated via generate-icons.js)
+│   ├── logo.svg
+│   ├── manifest.json
+│   └── icons/
 │
 ├── src/
+│   │
 │   ├── components/
-│   │   ├── Header.tsx              # Sticky nav: logo, availability pill, deep-dive links, PWA install
-│   │   ├── Hero.tsx                # Bio headline, project quick-index, primary CTAs
-│   │   ├── ProjectCard.tsx         # Project card: metadata, simulator trigger, deep-dive button
-│   │   ├── LiveSiteModal.tsx       # Full-screen iframe simulator with device controls
-│   │   ├── ToolsIUsed.tsx          # Filterable tool grid with category tabs & search
-│   │   ├── Methodology.tsx         # 4-pillar development approach section
-│   │   ├── AboutMe.tsx             # Bio, core values, developer spec sheet
-│   │   ├── ContactSection.tsx      # Dark contact panel with email copy & mailto CTA
-│   │   ├── Footer.tsx              # Live clock, project links, back-to-top
-│   │   ├── PWAInstallButton.tsx    # Smart install button for Android + iOS
-│   │   │
-│   │   ├── quicksolve/             # QuickSolve Platinum deep-dive
-│   │   │   ├── QuickSolveDeepDive.tsx
-│   │   │   ├── FileTreeViewer.tsx
-│   │   │   ├── ArchitectureDiagram.tsx
-│   │   │   ├── AuditScoresSection.tsx
-│   │   │   └── SuitesCatalog.tsx
-│   │   │
-│   │   ├── auracafe/               # Aura Cafe deep-dive
-│   │   │   ├── AuraCafeDeepDive.tsx
-│   │   │   ├── CafeFileTreeViewer.tsx
-│   │   │   ├── CafeArchitectureDiagram.tsx
-│   │   │   ├── WhatsAppBookingEngine.tsx
-│   │   │   ├── CafeMenuShowcase.tsx
-│   │   │   └── CafeAuditSection.tsx
-│   │   │
-│   │   └── auraathlete/            # Aura Athlete deep-dive
-│   │       ├── AuraAthleteDeepDive.tsx
-│   │       ├── GymFileTreeViewer.tsx
-│   │       ├── GymArchitectureDiagram.tsx
-│   │       ├── GymPagesShowcase.tsx
-│   │       ├── GymAuditSection.tsx
-│   │       └── VipBookingSimulator.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── LiveSiteModal.tsx
+│   │   ├── ToolsIUsed.tsx
+│   │   ├── Methodology.tsx
+│   │   ├── AboutMe.tsx
+│   │   ├── ContactSection.tsx
+│   │   ├── Footer.tsx
+│   │   └── PWAInstallButton.tsx
+│   │
+│   ├── quicksolve/
+│   ├── auracafe/
+│   ├── auraathlete/
 │   │
 │   ├── data/
-│   │   ├── projects.ts             # PROJECTS array + DEVELOPER_PROFILE config
-│   │   ├── cafeArchitecture.ts     # Cafe file tree, menu items, WhatsApp config
-│   │   ├── quicksolveArchitecture.ts
-│   │   └── gymArchitecture.ts
-│   │
 │   ├── hooks/
-│   │   └── usePWAInstall.ts        # PWA deferred prompt + iOS detection hook
+│   │   └── usePWAInstall.ts
 │   │
-│   ├── App.tsx                     # Root: view router (portfolio | 3 deep-dives)
-│   ├── main.tsx                    # React 19 createRoot entry
-│   ├── types.ts                    # Project & DeveloperProfile TypeScript interfaces
-│   └── index.css                   # Tailwind v4 @import, @theme tokens, global mobile fixes
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── types.ts
+│   └── index.css
 │
-├── generate-icons.js               # Sharp-based PWA icon generator script
-├── index.html                      # HTML shell with font preconnects & meta tags
-├── vite.config.ts                  # Vite + React + Tailwind + PWA plugin config
-├── tsconfig.json                   # Strict TypeScript compiler options
-├── package.json                    # Dependencies, scripts
-├── bun.lock                        # Bun lockfile for reproducible installs
-└── netlify.toml / _redirects       # SPA routing fallback for Netlify
+├── generate-icons.js
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+├── package.json
+└── bun.lock
 ```
 
 ---
 
-## 🏗 Deep Dive Architecture
+# 🏗 Navigation Architecture
 
-Each project's deep-dive is a **self-contained full-page view** triggered by hash navigation:
+The application uses a lightweight view-based architecture.
 
-```
-/#quicksolve-review  →  QuickSolveDeepDive
-/#auracafe-review    →  AuraCafeDeepDive
-/#athlete-review     →  AuraAthleteDeepDive
-```
-
-### Navigation Flow
-```
+```text
 App.tsx
- ├── currentView === 'portfolio'        → Full portfolio page
- ├── currentView === 'quicksolve-deep-dive'  → <QuickSolveDeepDive onBack={...} />
- ├── currentView === 'auracafe-deep-dive'    → <AuraCafeDeepDive onBack={...} />
- └── currentView === 'athlete-deep-dive'    → <AuraAthleteDeepDive onBack={...} />
+│
+├── portfolio
+│   └── Main Portfolio
+│
+├── quicksolve-deep-dive
+│   └── QuickSolveDeepDive
+│
+├── auracafe-deep-dive
+│   └── AuraCafeDeepDive
+│
+└── athlete-deep-dive
+    └── AuraAthleteDeepDive
 ```
 
-### Deep Dive Sections (Aura Cafe example)
-```
-AuraCafeDeepDive
- ├── 01 / 4-Tier Technical Architecture  (CafeArchitectureDiagram)
- ├── 02 / Repository File Tree           (CafeFileTreeViewer)
- ├── 03 / WhatsApp Reservation Pipeline  (WhatsAppBookingEngine) ← live simulator
- ├── 04 / Sensory Menu Catalog (16 items)(CafeMenuShowcase)
- └── 05 / Lighthouse & Production Audit  (CafeAuditSection)
-```
+Navigation is controlled through URL hashes and browser history events.
+
+This keeps the project simple while allowing each case study to behave like a separate view.
 
 ---
 
-## 🧑‍💻 Getting Started
+# 🔧 Getting Started
 
-### Prerequisites
+## Prerequisites
 
-| Tool | Version |
-|---|---|
-| Node.js | `>= 18.x` |
-| Bun (recommended) | `>= 1.x` |
-| npm | `>= 9.x` (alternative to Bun) |
+- Node.js `>= 18`
+- npm `>= 9`
+- Bun `>= 1` (optional)
 
-### 1. Clone the Repository
+## Clone
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
-cd your-portfolio
+git clone https://github.com/harsh00000670-afk/my_profile.git
+cd my_profile
 ```
 
-### 2. Install Dependencies
+## Install Dependencies
+
+Using Bun:
 
 ```bash
-# Using Bun (recommended — faster)
 bun install
+```
 
-# OR using npm
+Or npm:
+
+```bash
 npm install
 ```
 
-### 3. Set Up Environment Variables
+## Environment Variables
 
-```bash
-# Create a .env.local file in the root
-touch .env.local
+If AI-powered functionality is enabled, create:
+
+```text
+.env.local
 ```
 
-Add your Gemini API key (only needed if AI features are active):
+and add:
+
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### 4. Run Development Server
+Do not commit real API keys to the repository.
+
+## Start Development Server
 
 ```bash
-# Bun
 bun run dev
+```
 
-# npm
+or:
+
+```bash
 npm run dev
 ```
 
-The app will start at **[http://localhost:3000](http://localhost:3000)**
+The development server is configured for local network testing.
 
-> The `--host=0.0.0.0` flag is set by default — this exposes the dev server on your local network (useful for testing on a real mobile device over Wi-Fi).
+---
 
-### 5. Generate PWA Icons (optional)
+# 📜 Scripts
+
+| Command | Purpose |
+|---|---|
+| `bun run dev` | Start development server |
+| `bun run build` | Build the application |
+| `bun run preview` | Preview production build |
+| `bun run lint` | Run TypeScript checking |
+| `bun run clean` | Remove generated build/server files |
+| `node generate-icons.js` | Generate PWA icons |
+
+---
+
+# 🚢 Deployment
+
+## Vercel
+
+1. Import the repository into Vercel.
+2. Select the Vite framework preset.
+3. Deploy.
+
+## Netlify
+
+1. Connect the repository to Netlify.
+2. Set the build command:
 
 ```bash
-node generate-icons.js
+npm run build
 ```
 
-This uses `sharp` to generate all required PWA icon sizes from the source SVG.
+3. Set the publish directory:
 
----
-
-## 📜 Scripts Reference
-
-| Script | Command | Description |
-|---|---|---|
-| **Dev server** | `bun run dev` | Start Vite dev server on port 3000 |
-| **Production build** | `bun run build` | Type-check + bundle for production |
-| **Preview build** | `bun run preview` | Locally preview the production build |
-| **Type check** | `bun run lint` | Run `tsc --noEmit` strict type checking |
-| **Clean** | `bun run clean` | Remove `dist/` and `server.js` |
-| **Generate icons** | `node generate-icons.js` | Generate PWA icon set using sharp |
-
----
-
-## 🚢 Deployment
-
-### Netlify (Recommended for this portfolio)
-
-1. Push to GitHub
-2. Connect repo to Netlify
-3. Build settings:
-   ```
-   Build command:  npm run build
-   Publish dir:    dist
-   Node version:   18
-   ```
-4. The `_redirects` file in `/public` handles SPA routing:
-   ```
-   /*    /index.html   200
-   ```
-
-### Vercel
-
-1. Import repo from GitHub to Vercel dashboard
-2. Framework preset: **Vite**
-3. No additional config needed — `vite.config.ts` handles everything
-
-### Environment Variables (Production)
-
-Set in your Netlify/Vercel dashboard:
-```
-GEMINI_API_KEY = your_production_key
+```text
+dist
 ```
 
----
-
-## 🤖 Tools & AI Workflow
-
-This portfolio was built using an **AI-augmented development workflow**:
-
-| Tool | Role |
-|---|---|
-| **Google Gemini** | Deep contextual code synthesis & architectural brainstorming |
-| **Google AI Studio** | System prompt engineering & rapid API prototyping |
-| **Google Anti Gravity** | Autonomous agentic coding, multi-file synthesis & full-stack builds |
-| **Anthropic Claude** | Long-context codebase audits, architectural separation & nuanced refactoring |
-| **ChatGPT (OpenAI)** | Cross-referencing, edge-case analysis & iterative debugging |
-| **React Bits** | Animated UI component inspiration & micro-interaction patterns |
-| **motion.io** | Declarative spring animations & 60fps layout transitions |
-| **Termux + Acode** | Mobile CLI & IDE for development on-the-go |
-| **Umami Analytics** | Privacy-first, cookieless production traffic analytics |
-
-> The workflow pairs deep foundational knowledge (data structures, TypeScript, browser APIs) with AI-driven velocity to turn complex ideas into verified, live production apps at 10x speed — without sacrificing clean architecture.
+The SPA fallback configuration allows application routes to resolve correctly.
 
 ---
 
-## 📬 Contact
+# 🤖 AI-Assisted Development
 
-| Channel | Details |
-|---|---|
-| 📧 Email | [quicksolve.platinum@gmail.com](mailto:quicksolve.platinum@gmail.com) |
-| 🌐 Portfolio | Live via this repo |
-| ⚡ Response Time | < 24 hours |
-| 🕐 Timezone | UTC+5:30 (IST) |
-| 💼 Status | **Open to opportunities & collaborations** |
+AI is an active part of my development workflow.
+
+I use AI tools for:
+
+- Exploring implementation approaches
+- Rapid prototyping
+- Debugging
+- Refactoring
+- Understanding unfamiliar code
+- Architecture brainstorming
+- Documentation
+- Research
+- Iterative development
+
+The workflow is not simply generating code and shipping it.
+
+My approach is:
+
+```text
+Idea
+  ↓
+Prototype
+  ↓
+Read the implementation
+  ↓
+Run & test
+  ↓
+Break / find problems
+  ↓
+Debug
+  ↓
+Understand
+  ↓
+Refine
+  ↓
+Ship
+```
+
+AI helps accelerate iteration, while understanding the resulting code and validating the implementation remain part of the development process.
 
 ---
 
-## 📄 License
+# 🧠 What I Focus On
 
-This portfolio and its source code are the intellectual property of the developer. The codebase is shared publicly for portfolio review purposes. Please do not redistribute or resell.
+I am currently building deeper foundations in:
+
+- Programming fundamentals
+- Data structures & algorithms
+- C / C++
+- Python
+- JavaScript / TypeScript
+- React
+- SQL
+- Git & GitHub
+- Linux
+- Networking
+- Operating systems
+- Backend development
+- Software architecture
+- AI-assisted development
+
+My longer-term direction is toward software engineering, systems, AI, and full-stack development.
 
 ---
 
-<div align="center">
+# 📬 Contact
 
-**Built with React 19 · TypeScript · Tailwind v4 · Motion · Vite**
+**Email:**  
+quicksolve.platinum@gmail.com
 
-*College Undergrad · Frontend & Landing Page Specialist · AI-Augmented Workflow*
+**Portfolio:**  
+https://harshdev-omega.vercel.app/
 
-[![Email](https://img.shields.io/badge/Email-quicksolve.platinum%40gmail.com-black?style=flat-square&logo=gmail)](mailto:quicksolve.platinum@gmail.com)
+**GitHub:**  
+https://github.com/harsh00000670-afk
 
-</div>
+**Status:**  
+Open to opportunities, collaborations, and web development projects.
+
+---
+
+# 📄 License
+
+This repository is publicly available for portfolio and code-review purposes.
+
+Please do not redistribute or resell the project as your own work.
+
+---
+
+### Built with
+
+**React 19 · TypeScript · Tailwind CSS · Motion · Vite**
+
+*College Undergraduate · Frontend & Web Application Developer · AI-Assisted Workflow*
